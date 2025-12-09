@@ -27,7 +27,7 @@
 ## 🚀 RUN IN 2 COMMANDS
 
 ```bash
-# 1. Start everything
+# 1. Start everything (10-20 min first time)
 docker-compose up --build
 
 # 2. Run migrations (new terminal)
@@ -35,6 +35,8 @@ docker-compose exec backend alembic upgrade head
 ```
 
 **Access:** http://localhost:3000
+
+**Note:** First build takes 10-20 minutes (downloading PyTorch). Subsequent starts are instant!
 
 ---
 
@@ -106,6 +108,7 @@ Your R2 endpoint is configured but you need to add the **Secret Access Key** fro
 ## 🆘 NEED HELP?
 
 ### Quick Fixes
+- **Build timeout:** See `DOCKER_FIX.md` - we optimized this!
 - **Port in use:** Change ports in `docker-compose.yml`
 - **Database error:** Run migrations
 - **Frontend errors:** Run `npm install` in frontend/
