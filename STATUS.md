@@ -122,14 +122,47 @@
 
 ---
 
-## 🚧 IN PROGRESS (Week 2, Days 8-14)
+## ✅ COMPLETED (Week 2, Days 8-10) - RAG & CHATBOT!
+
+### 16. RAG Pipeline (Backend)
+- ✅ Document upload endpoint
+- ✅ Chroma vector DB integration
+- ✅ Document query with similarity search
+- ✅ Multi-tenant document isolation
+- ✅ Delete documents
+
+### 17. AI Chatbot (Backend)
+- ✅ Groq LLM integration (Llama 3.1 70B)
+- ✅ RAG-enhanced responses
+- ✅ Conversation history
+- ✅ Quick insights endpoint
+- ✅ Context-aware responses
+
+### 18. Documents Page (Frontend)
+- ✅ Document upload UI
+- ✅ Document list view
+- ✅ Query interface
+- ✅ Relevance scoring display
+- ✅ Delete documents
+
+### 19. Chat Page (Frontend)
+- ✅ Chat interface with messages
+- ✅ User/Assistant message bubbles
+- ✅ RAG toggle
+- ✅ Quick insights button
+- ✅ Loading states
+- ✅ Auto-scroll
+
+---
+
+## 🚧 IN PROGRESS (Week 2-3, Days 11-14)
 
 ### Next Tasks:
-1. [ ] Creative upload UI
-2. [ ] Trust score details page
-3. [ ] RAG document Q&A interface
-4. [ ] Simple chatbot UI
-5. [ ] Advanced ML models
+1. [ ] Advanced ML models (sentiment, emotion, bot detection)
+2. [ ] Creative upload UI improvements
+3. [ ] Trust score details page
+4. [ ] Deployment to Vercel + Render
+5. [ ] Testing & bug fixes
 
 ---
 
@@ -232,10 +265,12 @@ docker-compose exec backend alembic upgrade head
 - **Foundation:** ✅ 100%
 - **Backend Core:** ✅ 100% (Auth, Campaigns, Creatives, Analytics!)
 - **ML Service:** ✅ 60% (Trust Score, Engagement prediction!)
-- **Frontend:** ✅ 80% (Login, Register, Dashboard, Campaigns!)
+- **RAG Pipeline:** ✅ 100% (Document upload, Chroma, Q&A!)
+- **AI Chatbot:** ✅ 100% (Groq LLM, Context-aware!)
+- **Frontend:** ✅ 90% (All pages complete!)
 - **Deployment:** ⏳ 0%
 
-**Overall: 70% Complete** (Days 1-7 of 30!)
+**Overall: 85% Complete** (Days 1-10 of 30!)
 
 ---
 
@@ -285,7 +320,7 @@ docker-compose exec backend alembic upgrade head
 
 ---
 
-**Status:** Week 1 Complete (Days 1-7)! ✅
-**Next:** Advanced ML models + RAG + Chatbot 🚀
+**Status:** Week 1-2 Complete (Days 1-10)! ✅
+**Next:** Advanced ML models + Deployment 🚀
 **Budget Used:** ₹0 / ₹8,000 💰
-**Time Remaining:** 23 days
+**Time Remaining:** 20 days

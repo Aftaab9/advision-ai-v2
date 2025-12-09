@@ -74,7 +74,7 @@ from .routers import (
     analytics,
     ml,
     documents,
-    chatbot,
+    chat,
 )
 
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
@@ -83,6 +83,7 @@ app.include_router(creatives.router, prefix="/creatives", tags=["Creatives"])
 app.include_router(analytics.router, prefix="/analytics", tags=["Analytics"])
 app.include_router(ml.router, prefix="/ml", tags=["Machine Learning"])
 app.include_router(documents.router, prefix="/documents", tags=["Documents & RAG"])
+app.include_router(chat.router, prefix="/chat", tags=["AI Chatbot"])
 app.include_router(chatbot.router, prefix="/chatbot", tags=["AI Chatbot"])
 
 

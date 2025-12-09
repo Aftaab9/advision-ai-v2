@@ -35,6 +35,18 @@ export default function Navbar() {
               >
                 Campaigns
               </Link>
+              <Link
+                href="/documents"
+                className="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Documents
+              </Link>
+              <Link
+                href="/chat"
+                className="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                AI Chat
+              </Link>
             </div>
           </div>
           <div className="flex items-center">

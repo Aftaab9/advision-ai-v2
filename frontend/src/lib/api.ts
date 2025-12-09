@@ -89,3 +89,33 @@ export const mlAPI = {
   analyzeCreative: (creativeId: number) =>
     api.post('/ml/analyze-creative', { creative_id: creativeId }),
 };
+
+// Documents API (RAG)
+export const documentsAPI = {
+  upload: (file: File) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    return api.post('/documents/upload', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+  },
+  list: () =>
+    api.get('/documents/'),
+  delete: (id: number) =>
+    api.delete(`/documents/${id}`),
+  query: (query: string, nResults = 5) =>
+    api.post('/documents/query', null, { params: { query, n_results: nResults } }),
+};
+
+// Chat API
+export const chatAPI = {
+  sendMessage: (message: string, useRAG = true, history: any[] = []) =>
+    api.post('/chat/message', null, {
+      params: { message, use_rag: useRAG },
+      data: { conversation_history: history },
+    }),
+  getQuickInsights: (campaignId?: number) =>
+    api.post('/chat/quick-insights', null, {
+      params: campaignId ? { campaign_id: campaignId } : {},
+    }),
+};
